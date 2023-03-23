@@ -29,7 +29,7 @@ public class ProductServiceImpl implements  ProductService{
                     p.setName(product.getName());
                     p.setDescription(product.getDescription());
                     return productRepository.save(p);
-                }).orElseThrow(()-> new RuntimeException("Product not founnd"));
+                }).orElseThrow(()-> new RuntimeException("Product not found"));
     }
 
     @Override
